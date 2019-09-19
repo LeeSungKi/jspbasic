@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		1. <input name = "a" required="required" placeholder = "이름을 입력하세요."> <br>
+		2. <input type = "text" name = "b" value = "홍길동"> <br> <!-- 텍스트 입력 -->
+		3. <input type = "number" step="3" name = "c" value = "100"> <br> <!-- 수량 입력 -->
+		4. <input type = "password" name = "d" value = "pika1234"> <br> <!-- 패스워드 입력 -->
+		5. <input type = "email"> <br> <!-- 이메일 형식에 맞게 -->
+		6. <input type = "date"> <br> <!-- 년-월-일 -->
+		7. <input type = "hidden"> <br> <!-- 유저에게 보여줄 필요가 없는 파라미터를 넘길 때 사용 -->
+		8. <input type = "color"> <br> <!-- 컬러 피커 -->
+		9. <input type = "file"> <br> <!-- 파일 선택 -->
+		10. <input type = "tel"> <br> <!-- 핸드폰으로 실행했을 때 숫자판이 뜨는 텍스트창 -->
+		11. <input type = "radio" checked="checked"> <br> <!-- 단일 선택용 -->
+		12. <input type = "checkbox" checked> <br> <!-- 복수 선택용 -->
+		13. <input type = "submit" value = "전송하기!"> <br> <!-- form 제출용 버튼 ( action을 실행한다. ) -->
+		14. <input type = "reset" value = "다시쓰기!"> <br> <!-- 처음상태로 돌려놓기 -->
+		15. <input type = "button" value = "나를 눌러보세요!" 
+					onclick="alert('ㅋㅋㅋㅋ');"> <br> <!-- 일반 버튼 -->
+		16. <textarea name = "e">이곳이 value부분</textarea> <br>  <!-- 텍스트 입력  -->
+		17. <select name = "f"> <!-- 펼쳐서 보기 선택 -->
+				<option value = "one">1111</option>
+				<option value = "two" selected="selected">2222</option>
+				<option value = "three">3333</option>
+			</select>
+	<!-- 1 ~ 17 모두에는 name, value 속성을 추가할 수 있음
+		name : 전달될 값(파라미터)의 이름 
+		value : 파라미터의 기본값
+		required : 필수 기입 사항임을 표시
+		
+		checkbox, radio에는 checked 속성을 추가할 수 있음 
+		정식 표현 : checked = "checked"
+		쉬운 표현 : checked 
+		
+		select 에는 multiple 속성을 추가할 수 있음 
+		select의 option 에는 selected 속성을 추가할 수 있음
+		
+		모든 텍스트입력창 (text, number, email, password, textarea 등)에는 
+		placeholder를 사용할 수 있음
+	 -->
+	</form>
+</body>
+</html>
+
+
+

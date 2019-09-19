@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="myhome"
+		path="/myhome"
+		reloadable="true"
+		source="org.eclipse.jst.jee.server:myhome">
+	<Resource name="jdbc/oracle"
+		  type="javax.sql.DataSource"
+		  driverClassName="oracle.jdbc.driver.OracleDriver"
+		  url="jdbc:oracle:thin:@localhost:1521:xe"
+		  username="web1400"
+		  password="jsppassword"
+		  maxActive="20"
+		  maxIdle="20"
+		  minIdle="10"
+		  maxWait="-1"
+		  whenExhaustedAction="1"
+		  testWhileIdle="true" /> 
+
+</Context>
+<!-- 
+	
+	maxActive : 동시에 출동할 수 있는 최대 커넥션 개수
+	maxIdle : 대기 가능한 최대 커넥션 개수
+	maxWait : 사용 가능한 커넥션이 없을 경우 대기할 시간 (밀리초)
+			  음수면 무한 대기  
+			 whenExhaustedAction의 값이 1로 설정되어야 함
+	whenExhaustedAction : 사용 가능한 커넥션이 없을 경우 어떻게 할 것이냐
+			0 : 예외 발생
+			1 : 대기 (maxWait이 설정한 시간 만큼)
+			2 : 임시 Connection 커넥션 생성 (작업이 끝나면 해제) 
+ -->
+
+
+
+
+
+
+
+
+
